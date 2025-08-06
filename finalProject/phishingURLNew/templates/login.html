@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Phishing web scanner</title>
+
+    <!-- Favicon -->
+    <style type="text/css">
+<!--
+.style12 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+body {
+	background-color: #990000;
+}
+-->
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+    <!-- Preloader -->
+
+
+  
+    
+ 
+		 <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+        function login(){
+        var uname = document.getElementById("uname").value;
+        var pwd = document.getElementById("pwd").value;
+
+	if(uname == "admin" && pwd == "admin")
+	{
+	  alert("Login Success!");
+	  
+	  window.location = "{{url_for('index2')}}";
+	  return false;
+	}
+	else
+	{
+	alert("Invalid Credentials!")
+	}
+        }
+		
+		  
+
+
+ 
+    </script>
+	
+
+
+
+
+   
+ 
+
+
+			  
+            
+    
+			    <section class="page-section portfolio" id="portfolio">
+ 
+                  <div align="center"><span class="style12">Admin Login Page </span><br>
+                    <br>
+</div>
+                  <div class="row">
+ <div class="section-title">
+         
+ 
+</div>
+        <!-- Portfolio Item 1 -->
+		<table width="362" height="158" border="1" align="center">
+  <tr>
+    <td><div class="control-group">
+      <!-- Username -->
+      <label class="control-label"   for="username"><b>Username</b></label>
+      <div class="controls">
+        <input type="text" id="uname" name="uname" placeholder="Username" class="form-control">
+      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td><div class="control-group">
+      <!-- Password-->
+      <label class="control-label"  for="password"><b>Password</b></label>
+      <div class="controls">
+        <input type="password" id="pwd" name="pwd" placeholder="password" class="form-control">
+      </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td><div class="controls">
+				   
+			        <input type="button" class="btn btn-primary" value="Login"  onclick="login()">
+			      
+    </div></td>
+  </tr>
+</table>
+		
+      
+ 
+   
+</section>
+
+
+</body>
+
+</html>
